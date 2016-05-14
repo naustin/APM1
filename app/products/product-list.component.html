@@ -1,6 +1,6 @@
 <div class='panel panel-primary'>
     <div class = 'panel-heading'>
-        Product List
+       {{pageTitle}}
     </div>
     <div class='panel-body'>
         <div class="row">
@@ -14,10 +14,11 @@
             </div>
         </div>
         <div class="table-responsive">
-            <table class="table">
+            <table class="table"
+                  *ngIf='products && products.length'>
                 <thead>
                     <tr>
-                        <th>
+                         <th>
                             <button class="btn btn-primary">Show Image</button>
                         </th>
                         <th>Product</th>
